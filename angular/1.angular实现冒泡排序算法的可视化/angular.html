@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="anApp">
+<head>
+    <meta charset="UTF-8">
+    <title>可视化冒泡排序</title>
+    <!--<script data-require="angular.js@1.3.0-beta.5" data-semver="1.3.0-beta.5" src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1>冒泡排序的算法可视化</h1>
+<div ng-controller="ctrl">
+    <div class="value-line" ng-repeat="i in data" style="width:{{i*10}}px">{{i}}</div>
+    <button ng-click="start()">排序</button>
+    <button ng-click="reset()">重置</button>
+    <span style="color: red">{{alertMsg}}</span>
+</div>
+
+<script src="angular.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
